@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   
-    verifyServerResponds(); // Call the function on load to wake up the server
+    verifyServerResponds().catch(error => console.error('Error in verifyServerResponds:', error)); // Handle errors from the initial server check
   
-    form.addEventListener("submit", async function(event) {
+    form.addEventListener("submit", function(event) {
       event.preventDefault();
   
       const name = document.getElementById("name").value;
@@ -39,24 +39,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       };
   
-      try {
-        const response = await fetch(staticmanEndpoint, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(payload)
-        });
-  
+      fetch(staticmanEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(response => {
         if (response.ok) {
           console.log("Form submitted successfully:", response.status, response.statusText);
           form.reset(); // Reset the form fields after successful submission
         } else {
           console.error("Error submitting form:", response.status, response.statusText);
         }
-      } catch (error) {
-        console.error("Error submitting form:", error);
-      }
+      })
+      .catch(error => console.error("Error submitting form:", error));
     });
   });
   

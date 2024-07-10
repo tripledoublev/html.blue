@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     form.addEventListener("submit", function(event) {
       event.preventDefault();
-  
+      console.log('submiting form')
       const name = document.getElementById("name").value;
       const snippet = document.getElementById("snippet").value;
   

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr-CA">
 
 <head>
   <meta charset="utf-8" />
@@ -9,7 +9,8 @@
   <title>HTML Day 2026: Montréal</title>
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="HTML Day 2026: Montreal" />
-  <meta name="twitter:description" content="Saturday, August 8, 2026, 15h à 18h, Verdun beach" />
+  <meta name="description" content="Journée HTML / HTML Day Montréal — samedi 8 août 2026, de 15h à 18h, à la plage de Verdun." />
+  <meta name="twitter:description" content="Journée HTML / HTML Day Montréal — samedi 8 août 2026, de 15h à 18h, à la plage de Verdun." />
   <meta name="twitter:image" content="https://html.blue/blue.png" />
   <style>
     body {
@@ -32,6 +33,41 @@
       font-size: 1.25em;
     }
 
+    nav ul {
+      display: flex;
+      gap: 1em;
+      list-style: none;
+      padding: 0;
+    }
+
+    main {
+      max-width: 72ch;
+    }
+
+    section {
+      margin-block: 2em;
+    }
+
+    section h2 {
+      background: #1e90ff;
+      color: white;
+      display: inline-block;
+      padding-inline: .2em;
+    }
+
+    section h3 {
+      font-size: 1em;
+      margin-block: 1.5em 0;
+    }
+
+    section p {
+      margin-block: .25em;
+    }
+
+    address {
+      font-style: normal;
+    }
+
     a {
       color: #1e90ff;
       font-style: italic;
@@ -40,57 +76,96 @@
 </head>
 
 <body>
-  <img src="blue.png" width="333">
-  <br>
-  <h1>HTML Day 2026: Montréal</h1>
-  <br>
-  <h2>
-    Samedi, le <time datetime="2026-08-08">8 août</time> 2026<br>
-    15h à 18h<br />
-    Plage de Verdun≈Verdun beach
-  </h2>
-  <br>
-  <b>What is this?</b><br>
-  We get together in person and write HTML documents!
-  <br>
-  <br>
-  <b>What should I bring?</b><br>
-  yourself, something to write HTML on, a blanket and your beach energy
-  <br>
-  <br>
-  <b>Where exactly?</b><br>
-  Verdun by the beach, <a href="https://maps.app.goo.gl/7mhdaFWaw5Yg5a9J8">here</a><br>
-  <br>
-  <br>
-  <b>Who is running this?</b><br>
-  Vincent (<a href="https://instagram.com/ffforests" target="_blank">@ffforests</a>) &
-  Morgan (<a href="https://instagram.com/morgan__ali" target="_blank">@morgan___ali</a>)!
-  <br>
-  <br>
-  <b>How can I contact you both??</b><br>
-  DM us on Instagram or by email:<br>
-  Vincent (<a href="mailto:vincent@charlebois.info">vincent@charlebois.info</a>)<br>
-  Morgan (<a href="mailto:contact@morgan-ali.com">contact@morgan-ali.com</a>)
-  <br>
-  <br>
-  <b>I'm not in Montreal. Is there an event in my city?</b><br />
-  Check out <a href="https://html.energy/events.html">html.energy/events.html</a>.
-  If your city isn't listed, feel free to organize your own!
-  <br>
-  <br>
-  <b>Can I see what you built?</b>
-  <br>
-  You can have a look at the 
-  <a href="./archive/">archive</a>.
-  <hr>
-  <small>
-    Thanks to Omar (<a href="https://twitter.com/rsnous" target="_blank">@rsnous</a>) &
-    Laurel (<a href="https://twitter.com/roombaghost" target="_blank">@roombaghost</a>)
-    for keeping the <a href="https://html.energy" target="_blank">HTML.energy</a>
-    fire going strong! Cheers <a href="https://elliott.computer/">Elliott</a>!
-  </small>
-  <br>
-  <br>
+  <header>
+    <img src="blue.png" width="333" alt="HTML Day Montréal" />
+    <br />
+    <h1>Journée HTML / HTML Day 2026: Montréal</h1>
+    <h2>
+      Samedi <time datetime="2026-08-08">8 août 2026</time> / Saturday, August 8, 2026<br />
+      <time datetime="15:00">15h</time> à <time datetime="18:00">18h</time><br />
+      Plage de Verdun ≈ Verdun beach
+    </h2>
+    <nav aria-label="Langue / Language">
+      <ul>
+        <li><a href="#fr" lang="fr">Bonjour! Français</a></li>
+        <li><a href="#en" lang="en">Hi! English</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="fr" lang="fr-CA" aria-labelledby="titre-fr">
+      <h2 id="titre-fr">Bonjour!</h2>
+
+      <h3>C'est quoi?</h3>
+      <p>On se retrouve en personne pour écrire des documents HTML!</p>
+
+      <h3>Qu'est-ce que je devrais apporter?</h3>
+      <p>Toi-même, quelque chose pour écrire du HTML, une couverture et ton énergie de plage.</p>
+
+      <h3>C'est où exactement?</h3>
+      <p>À Verdun, près de la plage, <a href="https://maps.app.goo.gl/7mhdaFWaw5Yg5a9J8">ici</a>.</p>
+
+      <h3>Qui organise ça?</h3>
+      <p>Vincent (<a href="https://instagram.com/ffforests" target="_blank" rel="noopener">@ffforests</a>) et
+        Morgan (<a href="https://instagram.com/morgan__ali" target="_blank" rel="noopener">@morgan___ali</a>)!</p>
+
+      <h3>Comment vous contacter?</h3>
+      <address>
+        Écrivez-nous sur Instagram ou par courriel:<br />
+        Vincent (<a href="mailto:vincent@charlebois.info">vincent@charlebois.info</a>)<br />
+        Morgan (<a href="mailto:contact@morgan-ali.com">contact@morgan-ali.com</a>)
+      </address>
+
+      <h3>Je ne suis pas à Montréal. Y a-t-il un événement dans ma ville?</h3>
+      <p>Consulte <a href="https://html.energy/events.html">html.energy/events.html</a>.
+        Si ta ville n'est pas dans la liste, n'hésite pas à organiser ton propre événement!</p>
+
+      <h3>Est-ce que je peux voir ce que vous avez créé?</h3>
+      <p>Oui, jette un coup d'œil aux <a href="./archive/">archives</a>.</p>
+    </section>
+
+    <section id="en" lang="en" aria-labelledby="title-en">
+      <h2 id="title-en">Hi!</h2>
+
+      <h3>What is this?</h3>
+      <p>We get together in person and write HTML documents!</p>
+
+      <h3>What should I bring?</h3>
+      <p>Yourself, something to write HTML on, a blanket and your beach energy.</p>
+
+      <h3>Where exactly?</h3>
+      <p>Verdun by the beach, <a href="https://maps.app.goo.gl/7mhdaFWaw5Yg5a9J8">here</a>.</p>
+
+      <h3>Who is running this?</h3>
+      <p>Vincent (<a href="https://instagram.com/ffforests" target="_blank" rel="noopener">@ffforests</a>) &amp;
+        Morgan (<a href="https://instagram.com/morgan__ali" target="_blank" rel="noopener">@morgan___ali</a>)!</p>
+
+      <h3>How can I contact you both?</h3>
+      <address>
+        DM us on Instagram or by email:<br />
+        Vincent (<a href="mailto:vincent@charlebois.info">vincent@charlebois.info</a>)<br />
+        Morgan (<a href="mailto:contact@morgan-ali.com">contact@morgan-ali.com</a>)
+      </address>
+
+      <h3>I'm not in Montréal. Is there an event in my city?</h3>
+      <p>Check out <a href="https://html.energy/events.html">html.energy/events.html</a>.
+        If your city isn't listed, feel free to organize your own!</p>
+
+      <h3>Can I see what you built?</h3>
+      <p>You can have a look at the <a href="./archive/">archive</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <small>
+      Merci / Thanks to Omar (<a href="https://twitter.com/rsnous" target="_blank" rel="noopener">@rsnous</a>) &amp;
+      Laurel (<a href="https://twitter.com/roombaghost" target="_blank" rel="noopener">@roombaghost</a>)
+      d'entretenir / for keeping the <a href="https://html.energy" target="_blank" rel="noopener">HTML.energy</a>
+      fire going strong! Salut / Cheers <a href="https://elliott.computer/">Elliott</a>!
+    </small>
+  </footer>
 </body>
 
 </html>
